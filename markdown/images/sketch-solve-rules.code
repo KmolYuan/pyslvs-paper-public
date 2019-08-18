@@ -1,0 +1,5 @@
+Create geometrics expressions;
+Create constraints;
+Collecting pointers of parameters and constraints;
+Startup BFGS algorithm;
+Parameters will be changed;

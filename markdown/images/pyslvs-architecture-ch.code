@@ -1,0 +1,41 @@
+Pyslvs (Python);
+branch simulate {
+    平面連桿機構模擬 [Cython];
+    branch solvespace [SWIG / Cython] {Solvespace (C++);}
+    branch triangle [Cython] {
+        triangle:
+        三角形模組
+        [參照];
+    }
+    join triangle;
+    Sketch Solve (C++);
+}
+branch synthesis {
+    機構合成;
+    branch number {
+        數目合成
+        [Cython];
+        組合演算法;
+    }
+    branch structure {
+        構造合成
+        [Cython];
+        圖形演算法;
+    }
+    branch dimension {
+        尺寸合成
+        [Cython];
+        branch rga [Cython] {RGA;}
+        branch de [Cython] {DE;}
+        branch firefly [Cython] {Firefly;}
+        join rga, de, firefly;
+        驗證物件
+        [參照];
+        goto triangle;
+    }
+}
+branch gui {
+    圖形化使用者介面
+    [SIP (PyQt)];
+    Qt (C++);
+}

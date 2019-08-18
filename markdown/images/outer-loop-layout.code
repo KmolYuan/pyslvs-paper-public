@@ -1,0 +1,35 @@
+Input close loop graph;
+Find the cycle basis;
+head:
+Merge cycle basis two by two;
+if (!Is over?) {
+    if (C1 and C2 have intersection) {
+        Choose the longest continuous intersection;
+        C2 should has different direction with C1;
+        Using longest node series;
+    } else {
+        There has two or more "bridge" connections;
+        Using longest node series with "bridge";
+        C2 should has different direction with C1;
+    }
+    Merge C1 and C2;
+    goto head;
+}
+Get the outer loop;
+Rotate the outer loop to start node;
+line:
+Get longest line path across outer loop;
+if (!No any line path?) {
+    Find the intersections of the line path;
+    if (The line path is a chord?)
+        Add the line path;
+    goto line;
+}
+curve:
+Bezier curve layout for each line path;
+if (!No any line path?) {
+    if (Paths has same start & end?)
+        Equal division of angle;
+    goto curve;
+}
+Return layout;

@@ -1,0 +1,9 @@
+__pycache__/
+*tex2pdf.*/
+references/
+
+.DS_Store
+*/.DS_Store
+
+pdf/*.pdf
+*.bak

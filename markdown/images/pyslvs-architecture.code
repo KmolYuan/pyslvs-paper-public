@@ -1,0 +1,41 @@
+Pyslvs (Python);
+branch simulate {
+    Planar Linkage Mechanism Simulation [Cython];
+    branch solvespace [SWIG / Cython] {Solvespace (C++);}
+    branch triangle [Cython] {
+        triangle:
+        Triangle Module
+        [Refer];
+    }
+    join triangle;
+    Sketch Solve (C++);
+}
+branch synthesis {
+    Mechanism Synthesis;
+    branch number {
+        Number Synthesis
+        [Cython];
+        Combination Algorithm;
+    }
+    branch structure {
+        Structural Synthesis
+        [Cython];
+        Graph Algorithms;
+    }
+    branch dimension {
+        Dimensional Synthesis
+        [Cython];
+        branch rga [Cython] {RGA;}
+        branch de [Cython] {DE;}
+        branch firefly [Cython] {Firefly;}
+        join rga, de, firefly;
+        Verification Object
+        [Refer];
+        goto triangle;
+    }
+}
+branch gui {
+    Graphical User Interface
+    [SIP (PyQt)];
+    Qt (C++);
+}

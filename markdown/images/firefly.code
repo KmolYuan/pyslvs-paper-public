@@ -1,0 +1,8 @@
+Create initial population;
+gen:
+Movement;
+Update brightness;
+Sorting;
+if (!Reach limitation?)
+    goto gen;
+Return the last best individual;

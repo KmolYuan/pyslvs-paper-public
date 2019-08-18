@@ -1,0 +1,11 @@
+Source code of C / C++ definitions;
+Explicit include declarations;
+goto compile;
+
+Interface declarations & template
+[SWIG translation];
+C / C++ wrapper definitions;
+
+compile:
+Compile source code;
+Wrapped library & Original libraries;

@@ -1,0 +1,17 @@
+Algorithm settings;
+Created algorithm object;
+goto startup;
+
+Verification object settings;
+Created verification object;
+
+startup:
+Initialize algorithm;
+Initialize population;
+do {
+    Generate new individuals;
+    Calculate the fitnesses by verification object;
+    Choose the advantageous individuals;
+} while (!End condition);
+Decided dimension;
+Kinematic analysis;

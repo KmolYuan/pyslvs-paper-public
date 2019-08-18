@@ -1,0 +1,8 @@
+Create solver system;
+Add entities and constraints;
+Solve and get result flag;
+if (Solved OK?)
+    Get values from entities;
+else
+    Values will not changed;
+Garbage collecting;

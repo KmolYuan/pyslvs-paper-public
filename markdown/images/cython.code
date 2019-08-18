@@ -1,0 +1,12 @@
+Source code of C / C++ definitions;
+Explicit include declarations;
+goto compile;
+
+Cython definitions;
+Cython declarations
+[Cythonize];
+C / C++ implementation;
+
+compile:
+Compile source code by Python;
+Wrapped library;

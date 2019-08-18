@@ -1,0 +1,8 @@
+---
+fignos-cleveref: true
+fignos-plus-name: 圖
+tablenos-cleveref: true
+tablenos-plus-name: 表
+eqnos-cleveref: true
+eqnos-plus-name: 式
+---

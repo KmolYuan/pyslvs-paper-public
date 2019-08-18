@@ -1,0 +1,9 @@
+Initialization;
+gen:
+Mutation;
+Recombination;
+Calculate fitness;
+Selection;
+if (!Reach limitation?)
+    goto gen;
+Return the last best individual;

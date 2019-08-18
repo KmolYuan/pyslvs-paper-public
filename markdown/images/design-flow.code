@@ -1,0 +1,48 @@
+function Structural Synthesis {
+    Number and Type Synthesis;
+    Enumeration of Contracted Graph;
+    Cut-links Check;
+    Planar Check;
+    Isomorphism Check;
+    Enumeration of Conventional Graphs;
+    Degenerate Check;
+    Isomorphism Check;
+}
+
+function Dimensional Synthesis {
+    Configuration of Generalized Chain;
+    Automatic Configuration;
+    switch (Algorithms) {
+        case RGA:
+            RGA;
+            break;
+        case DE:
+            DE;
+            break;
+        case Firefly:
+            Firefly;
+            break;
+    }
+    return Mapped Dimensions;
+}
+
+function Kinematic Simulation {
+    Kernel Mapping;
+    Numerical Methods;
+    Update Positions;
+}
+
+function Backward Analysis {
+    Generalization;
+    Identification;
+}
+
+head:
+Generalized Chain;
+call Structural Synthesis;
+Graph Block;
+call Dimensional Synthesis;
+Mechanism Expression;
+call Kinematic Simulation;
+call Backward Analysis;
+goto head;

@@ -1,0 +1,44 @@
+Input mechanism expression;
+Placement initialization;
+head:
+For each joint;
+if (Empty travel)
+goto end;
+Get a unconfigured joint;
+Analysis;
+switch (Joint property) {
+case Input joint:
+    PLAP;
+    break;
+case Rotate joint:
+    PLLP;
+    break;
+case Rotate Prismatic joint:
+    if (!Slot grounded) {
+        if (Slot conflict)
+        goto pass;
+    PLLP for base;
+    PLLP for slot;
+    }
+    PLPP for pin;
+    break;
+case Prismatic joint:
+    if (!Slot grounded) {
+        if (Slot conflict)
+        goto pass;
+    PLLP for base;
+    PLLP for slot;
+    }
+    PXY;
+    break;
+case Not in cases:
+    pass:
+    Pass this joint;
+    goto head;
+}
+Configuration;
+Mark as configured;
+Push into stack;
+goto head;
+end:
+Output configuration;

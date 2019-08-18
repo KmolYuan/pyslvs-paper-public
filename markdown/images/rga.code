@@ -1,0 +1,11 @@
+Create initial population;
+gen:
+Reproduction;
+Crossover;
+Mutation;
+New population;
+Calculate fitness;
+Replacement;
+if (!Reach limitation?)
+    goto gen;
+Return the last best individual;

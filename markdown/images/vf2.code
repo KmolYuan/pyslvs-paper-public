@@ -1,0 +1,25 @@
+Input G1 and G2;
+Create new state;
+Create mapping between two graphs;
+head:
+if (Mapping covers all the nodes of G2) {
+    Return true;
+    goto end;
+}
+each:
+For each candidate pairs;
+Semantic feasibility depends only on the structure of the graphs;
+Syntactic feasibility depends on the attributes;
+if (Is feasible?) {
+    Create new state;
+    Add candidate pair into new mapping;
+    goto head;
+} else {
+    if (Is pairs over?) {
+        Return false;
+        goto end;
+    }
+    Update data structures;
+    loop each;
+}
+end:

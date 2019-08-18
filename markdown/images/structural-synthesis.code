@@ -1,0 +1,14 @@
+Input LA & CLA;
+Valid check;
+if Only binary links {
+    Return ring graph;
+    goto end;
+}
+Generate constracted graph with LA;
+Isomorphism check;
+Planar check;
+Combination with CLA;
+Degenerate check;
+Isomorphism check;
+end:
+Results;

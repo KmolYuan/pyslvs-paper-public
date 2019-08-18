@@ -1,0 +1,86 @@
+---
+university_zh: 國立虎尾科技大學
+university_en: National Formosa University
+institute_zh: 機械設計工程系碩士班
+institute_en: Department of Mechanical Design Engineering
+category_zh: 碩士論文
+category_en: Master Thesis
+title_page: |
+    A Thesis Submitted to Department of Mechanical Design Engineering
+
+    College of Engineering
+
+    National Formosa University
+
+    in Partial Fulfillment of the Requirements
+
+    for the Degree of Master of Science in
+
+    Mechanical Design Engineering
+title_zh: 平面多連桿機構之合成與應用
+title_en: Synthesis and Application of Planar Multi-link Mechanism
+author_zh: 張元
+author_en: Yuan Chang
+advisor_zh: 嚴家銘
+advisor_en: Chia-Ming Yen
+date_zh: 中華民國 108 年 6 月
+date_en: |
+    June, 2019
+
+    Huwei, Yunlin, Taiwan, Republic of China
+watermark: images/watermark
+abstract_zh: |
+    本研究應用結構合成 (Structural Synthesis)、尺寸合成 (Dimensional Synthesis) 及運動模擬 (Kinematic Simulation) 等設計方法，實做一套平面多連桿機構設計分析軟體系統，以開源模式釋出，並命名為 Pyslvs。核心程式架構採用修改後的 Planar Mechanism Kinematic Simulator (PMKS) 作為設計結果的資料表示法，可同時表達拓樸構造與尺寸關係。因此在 Pyslvs 中可以系統化地匯入與匯出所評估的機構表達式。
+
+    結構合成部分採用邊集合 (Edge Set) 表示法，設計一種圖形列舉演算流程，以建立一般化鏈的圖譜。而尺寸合成過程則可使用三種演化運算法中的一種，進行最佳化機構路徑生成 (Path Generation)。運動路徑模擬部份採用 Solvespace 與 Sketch Solve 兩款開源電腦輔助繪圖軟體程式庫，藉由牛頓-拉夫森法 (Newton-Raphson method) 與 BFGS 演算法進行數值分析運算。
+
+    本研究最後透過堆棧表示法進行位置分析模組的配置，產生通用的平面連桿機構驗證模型。並利用多個範例展示所完成軟體套件的相關功能。
+
+    &nbsp;
+
+    \noindent
+    關鍵詞：開源電腦輔助設計軟體、結構合成、尺寸合成、機構表達式、平面連桿機構創新設計
+abstract_en: |
+    In this research, the design methods of structural synthesis, dimensional synthesis, and kinematic simulation for planar multi-link mechanism were investigated and implemented as an open-source software package named Pyslvs. The core program architecture uses the improved Planar Mechanism Kinematic Simulator (PMKS) as the data representation for design results, which can simultaneously express the topological structure and dimensional relationship. Therefore, Pyslvs can import and export the evaluated mechanism expression systematically.
+
+    For the structural synthesis part, the Edge Set of the graph was enumerated to construct the atlas of generalized chain. While in the dimensional synthesis process, one of three evolutionary computation methods can be applied to optimize the requested path generation. As for kinematic simulation of the mechanism is based on two different open source geometric constraint solver libraries, Solvespace and Sketch Solve, which the Newton-Raphson method and BFGS algorithm were used accordingly.
+
+    To the end of this thesis, the configuration of the position analysis module is performed by stack representation to generate a verification model for the associated planar linkage mechanism, and multiple examples are used to demonstrate the relevant functionality of the accomplished software package.
+
+    &nbsp;
+
+    \noindent
+    Keywords: Open Source Computer-aided Design Software, Structural Synthesis, Dimensional Synthesis, Mechanism Expression, Creative Design of Planar Linkage Mechanism
+abstract_extended: |
+    In this research, the design methods of structural synthesis, dimensional synthesis, and kinematic simulation for planar multi-link mechanism were investigated and implemented as an open-source software package named Pyslvs. The core program architecture uses the improved Planar Mechanism Kinematic Simulator (PMKS) as the data representation for design results, which can simultaneously express the topological structure and dimensional relationship. Therefore, Pyslvs can import and export the evaluated mechanism expression systematically.
+
+    \noindent
+    Keywords: Open Source Computer-aided Design Software, Structural Synthesis, Dimensional Synthesis, Mechanism Expression, Creative Design of Planar Linkage Mechanism
+acknowledgements: |
+    I would like to thank the oral examination committee members: Ying-Jeng Engin Wu (吳英正), Willie Wang (王威立) and my advisor Chia-Ming Yen (嚴家銘) for the research guidance and suggestions.
+
+    This study is integrated multi-party research results and consultative. Special thanks to Dr. Hong-Sen Yan (顏鴻森) for the research foundation and teaching of Creative Design Methodology. And thanks to senior lab mate Mong-Kong Lee (李孟恭) for his programming foundation of dimensional synthesis. For the open source contribution of Pyslvs, thanks to the technological guidance of all third-party software maintainers, Solvespace, Cython, NumPy, PyInstaller and AppImage.
+
+    The writing of this thesis is made by Kmol editor, an outline editor inspired from Leo editor, powered by Markdown and Latex technology of Pandoc. Thanks to the people who support these technologies and plugins, so was able to complete the thesis and the development of Kmol editor.
+
+    I also want to thank all my family and friends for their support.
+symbols: |
+    | Symbol | Description |
+    |:------:|:------------|
+    | $m_{\max}$ | Max number of joints in single link of the mechanism. |
+    | $N_J$ | Number of joints. |
+    | $N_L$ | Number of links. |
+    | $N_{L_k}$ | Number of $k$-ary links. |
+    | $N_C$ | Number of contracted links. |
+    | $N_{C_k}$ | Number of $k$ series binary links. |
+    | $N_M$ | Number of multiple links. |
+    | $J_M$ | Joints number of multiple links. |
+    | $J_M'$ | Max number of direct connections between multiple links. |
+    | $P(P_x, P_y)$ | A point $P$ use $P_x$ and $P_y$ as its coordinate. |
+    | $A \coloneqq (A)_\text{old}$ | A newer $A$ was defined by older itself, not a recursive expression. |
+    | $\max\{A, B\}$ | The largest value among $A$ and $B$. |
+    | $\min\{A, B\}$ | The smallest value among $A$ and $B$. |
+    | $\text{random}\{A, B\}$ | A random value between $A$ to $B$. |
+    | $\text{len}(A)$ | The length or the number of $A$. |
+    | $\text{hypot}(x, y)$ | Hypotenuse function equals $\sqrt{x^2 + y^2}$. |
+---

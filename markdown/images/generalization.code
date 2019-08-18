@@ -1,0 +1,34 @@
+Input mechanism expression;
+head1:
+For link i by links;
+if (No links?)
+    goto end;
+head2:
+For each point by points of the link;
+if (No points?)
+    goto head1;
+if (Point is used?)
+    goto head2;
+head3:
+For link j by links of the point;
+if (No links?)
+    goto head2;
+if (The link i == j?)
+    goto head3;
+if (Is multiple joint?)
+    Collecting position;
+if (Is slider?) {
+    Connect i to dummy node;
+    if (Is grounded?)
+        Add to grounded list;
+    Connect dummy node to j;
+} else {
+    if (Is multiple joint?)
+        Add to multiple joints;
+    Connect i to j;
+}
+if (Grounded and is not multiple joint)
+    Add to grounded list;
+goto head3;
+end:
+Return the graph;
